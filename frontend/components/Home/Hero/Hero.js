@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     HeroButton,
-    HeroContainer,
+    HeroContainer, HeroDescription,
     HeroImage, HeroImageSection,
     HeroInformation, NumberContainer,
     NumbersSection, NumbersText
@@ -14,7 +14,7 @@ const Hero = () => {
             <HeroInformation>
                 <Header>BESPLATAN PREGLED</Header>
                 <Header>DOKTORA SPECIJALISTE</Header>
-                <Description>Besplatan pregled doktora specijaliste utorkom od 16:00. Naručite se i provjerite Vaš vid na vrijeme.</Description>
+                <HeroDescription>Besplatan pregled doktora specijaliste utorkom od 16:00. Naručite se i provjerite Vaš vid na vrijeme.</HeroDescription>
                 <HeroButton filled href="/">REZERVIŠITE TERMIN</HeroButton>
                 <NumberContainer>
                     <NumbersSection>

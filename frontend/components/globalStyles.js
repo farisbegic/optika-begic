@@ -38,12 +38,18 @@ export const FlexSection = styled.div`
 export const Button = styled.a`
   cursor: pointer;
   color: var(--white);
-  padding: 15px 0;
+  padding: 18px 0;
   text-align: center;
   width: 200px;
   background-color: ${props => props.filled ? "var(--orange)" : "var(--white)"};
   border: ${props => props.filled ? "none" : "1px solid var(--orange)"};
   border-radius: 10px;
+`;
+
+export const Line = styled.hr`
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.05);
+  margin: 10px 0;
 `;
 
 export const Header = styled.h1`
@@ -73,4 +79,17 @@ export const SocialItem = styled.a`
   margin: 10px;
   padding: 10px;
   height: 40px;
+`;
+
+export const Card = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-direction: ${props => props.direction};
+  width: ${props => props.width};
+  height: ${props => props.height};
+  background-color: var(--white);
+  box-shadow: 0 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
 `;

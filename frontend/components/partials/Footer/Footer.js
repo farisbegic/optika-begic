@@ -1,8 +1,8 @@
 import React from 'react';
-import {Copyright, FooterContainer, FooterMenu, FooterSection, Line} from "./Footer.elements";
+import {Copyright, FooterContainer, FooterMenu, FooterSection} from "./Footer.elements";
 import {Logo, NavItem} from "../Navbar/Navbar.elements";
 import Link from "next/link";
-import {Description, SocialItem, SocialMenu} from "../../globalStyles";
+import {Line, SocialItem, SocialMenu} from "../../globalStyles";
 import {FaFacebook, FaInstagram, FaViber} from "react-icons/fa";
 
 const Footer = () => {

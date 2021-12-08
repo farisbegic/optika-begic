@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import {Button, FlexContainer, FlexSection} from "../../globalStyles";
+import {Button, Description, FlexContainer, FlexSection} from "../../globalStyles";
 
 export const HeroContainer = styled(FlexContainer)`
-  margin: 40px 0;
+  margin: 10px 0;
   justify-content: space-between;
   align-items: center;
 `;
@@ -22,6 +22,10 @@ export const HeroImageSection = styled.div`
   height: 400px;
 `;
 
+export const HeroDescription = styled(Description)`
+  padding-bottom: 30px;
+`;
+
 export const HeroImage = styled.img`
   width: 500px;
 `;
@@ -31,6 +35,7 @@ export const HeroButton = styled(Button)`
 `;
 
 export const NumberContainer = styled.div`
+  margin: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
