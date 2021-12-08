@@ -50,23 +50,6 @@ export const Logo = styled.img`
   }
 `;
 
-export const SocialMenu = styled.div`
-  display: flex;
-  @media screen and (max-width: 1000px){
-    display: none;
-  }
-`;
-
-export const SocialItem = styled.div`
-  align-items: center;
-  justify-content: center;
-  background-color: var(--light-orange);
-  border-radius: 50%;
-  margin: 10px;
-  padding: 15px;
-  height: 52px;
-`;
-
 export const HamburgerIcon = styled.div`
   cursor: pointer;
   display: none;
