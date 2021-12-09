@@ -20,7 +20,7 @@ export const NavMenu = styled.div`
     top: 0;
     left: ${({click}) => (click ? 0 : '100%')};
     transition: all 0.5s ease;
-    background: var(--light-orange);
+    background: var(--orange);
   }
 `;
 

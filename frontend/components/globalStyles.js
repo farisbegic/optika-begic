@@ -12,6 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     --black: #000;
     --white: #fff;
   }
+
+  ::selection{
+    background-color: var(--orange);
+    color: #fff;
+  }
 `;
 
 export const FlexContainer = styled.div`
