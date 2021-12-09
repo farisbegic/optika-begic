@@ -16,6 +16,7 @@ export const NavMenu = styled.div`
     flex-direction: column;
     width: 100%;
     height: 100vh;
+    z-index: 1;
     position: fixed;
     top: 0;
     left: ${({click}) => (click ? 0 : '100%')};
