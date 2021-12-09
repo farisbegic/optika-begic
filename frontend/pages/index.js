@@ -8,7 +8,7 @@ import Brands from "../components/Home/Brands/Brands";
 const Index = () => {
     return (
         <>
-            <Navbar />
+            <Navbar color="black"/>
             <Hero />
             <Process />
             <Features />

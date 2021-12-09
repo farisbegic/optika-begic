@@ -28,7 +28,7 @@ export const NavItem = styled.a`
   text-decoration: none;
   font-size: 18px;
   padding: 0 10px;
-  color: var(--black);
+  color: ${props => props.color};
 
   @media screen and (max-width: 1000px){
     color: var(--black);
