@@ -6,6 +6,10 @@ export const BrandsContainer = styled(FlexContainer)`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
 `;
 
 export const BrandList = styled(FlexSection)`

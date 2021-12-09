@@ -1,6 +1,6 @@
 import React from 'react';
-import {Copyright, FooterContainer, FooterMenu, FooterSection} from "./Footer.elements";
-import {Logo, NavItem} from "../Navbar/Navbar.elements";
+import {Copyright, FooterContainer, FooterMenu, FooterNav, FooterSection} from "./Footer.elements";
+import {Logo} from "../Navbar/Navbar.elements";
 import Link from "next/link";
 import {Line, SocialItem, SocialMenu} from "../../globalStyles";
 import {FaFacebook, FaInstagram, FaViber} from "react-icons/fa";
@@ -11,10 +11,10 @@ const Footer = () => {
             <FooterContainer>
                 <Logo src="/logo.png" alt="logo"/>
                 <FooterMenu>
-                    <Link href="/" passHref><NavItem>Home</NavItem></Link>
-                    <Link href="/" passHref><NavItem>Products</NavItem></Link>
-                    <Link href="/" passHref><NavItem>Contact</NavItem></Link>
-                    <Link href="/" passHref><NavItem>Pregled</NavItem></Link>
+                    <Link href="/" passHref><FooterNav>Home</FooterNav></Link>
+                    <Link href="/" passHref><FooterNav>Products</FooterNav></Link>
+                    <Link href="/" passHref><FooterNav>Contact</FooterNav></Link>
+                    <Link href="/" passHref><FooterNav>Pregled</FooterNav></Link>
                 </FooterMenu>
             </FooterContainer>
             <Line />

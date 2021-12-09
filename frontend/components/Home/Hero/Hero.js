@@ -2,8 +2,8 @@ import React from 'react';
 import {
     HeroButton,
     HeroContainer, HeroDescription,
-    HeroImage, HeroImageSection,
-    HeroInformation, NumberContainer,
+    HeroImage,
+    HeroInformation, HeroTextContainer, NumberContainer,
     NumbersSection, NumbersText
 } from "./Hero.elements";
 import {Description, Header} from "../../globalStyles";
@@ -12,10 +12,12 @@ const Hero = () => {
     return (
         <HeroContainer>
             <HeroInformation>
-                <Header>BESPLATAN PREGLED</Header>
-                <Header>DOKTORA SPECIJALISTE</Header>
-                <HeroDescription>Besplatan pregled doktora specijaliste utorkom od 16:00. Naručite se i provjerite Vaš vid na vrijeme.</HeroDescription>
-                <HeroButton filled href="/">REZERVIŠITE TERMIN</HeroButton>
+                <HeroTextContainer>
+                    <Header>BESPLATAN PREGLED</Header>
+                    <Header>DOKTORA SPECIJALISTE</Header>
+                    <HeroDescription>Besplatan pregled doktora specijaliste utorkom od 16:00. Naručite se i provjerite Vaš vid na vrijeme.</HeroDescription>
+                    <HeroButton filled href="/">REZERVIŠITE TERMIN</HeroButton>
+                </HeroTextContainer>
                 <NumberContainer>
                     <NumbersSection>
                         <Header>200+</Header>
@@ -33,9 +35,7 @@ const Hero = () => {
                     </NumbersSection>
                 </NumberContainer>
             </HeroInformation>
-            <HeroImageSection>
-                <HeroImage src="doctor-hero.png"/>
-            </HeroImageSection>
+            <HeroImage src="doctor-hero.png"/>
         </HeroContainer>
     );
 };

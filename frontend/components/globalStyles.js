@@ -16,14 +16,18 @@ export const GlobalStyle = createGlobalStyle`
 
 export const FlexContainer = styled.div`
   display: flex;
-  padding: 20px 100px;
+  padding: 20px 150px;
 
   @media screen and (max-width: 1000px){
     padding: 30px 100px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     padding: 20px 50px;
+  }
+
+  @media screen and (max-width: 650px) {
+    padding: 20px 30px;
   }
 
   @media screen and (max-width: 400px) {
@@ -38,12 +42,19 @@ export const FlexSection = styled.div`
 export const Button = styled.a`
   cursor: pointer;
   color: var(--white);
-  padding: 18px 0;
+  padding: 15px;
   text-align: center;
-  width: 200px;
   background-color: ${props => props.filled ? "var(--orange)" : "var(--white)"};
   border: ${props => props.filled ? "none" : "1px solid var(--orange)"};
   border-radius: 10px;
+
+  @media screen and (max-width: 1400px){
+    font-size: 13px;
+  }
+
+  @media screen and (max-width: 650px){
+    font-size: 10px;
+  }
 `;
 
 export const Line = styled.hr`
@@ -56,12 +67,28 @@ export const Header = styled.h1`
   font-weight: 800;
   color: var(--black);
   font-size: 48px;
+  
+  @media screen and (max-width: 1400px){
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 1200px){
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 800px){
+    font-size: 20px;
+  }
 `;
 
 export const Description = styled.p`
   font-weight: 400;
   color: var(--black);
   font-size: 20px;
+
+  @media screen and (max-width: 1400px){
+    font-size: 15px;
+  }
 `;
 
 export const SocialMenu = styled.div`

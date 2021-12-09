@@ -9,16 +9,36 @@ export const FeaturesContainer = styled(FlexContainer)`
 
 export const FeatureImage = styled.img`
   width: 500px;
+
+  @media screen and (max-width: 1400px) {
+    width: 400px;
+  }
+
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
 `;
 
 export const FeatureCards = styled(FlexSection)`
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 
 export const FeatureRow = styled(FlexSection)`
   flex-direction: column;
-  padding: 40px ;
+  padding: 40px;
+
+  @media screen and (max-width: 1400px) {
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding: 0;
+  }
 `;
 
 export const FeatureIcon = styled.img`
