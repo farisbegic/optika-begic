@@ -43,12 +43,8 @@ export const NavItem = styled.a`
 `;
 
 export const Logo = styled.img`
-  height: 41px;
+  height: 70px;
   z-index: 1;
-
-  @media screen and (max-width: 600px) {
-    height: 30px;
-  }
 `;
 
 export const HamburgerIcon = styled.div`

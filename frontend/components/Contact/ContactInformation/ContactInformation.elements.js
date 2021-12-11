@@ -96,7 +96,9 @@ export const FormInput = styled.input`
   outline: none;
 `;
 
-export const SendButton = styled(FlexSection)`
+export const SendButton = styled.button`
+  border: none;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +123,7 @@ export const ContactRight = styled(FlexSection)`
 `;
 
 export const ContactPart = styled(FlexSection)`
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 20px 0;
   width: 50%;

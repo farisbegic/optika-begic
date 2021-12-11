@@ -1,6 +1,5 @@
 import React from 'react';
 import {BiPaperPlane} from 'react-icons/bi';
-
 import {
     ContactBox,
     ContactForm,
@@ -12,8 +11,21 @@ import {
     FormLabel, InformationSection, InformationText, SendButton
 } from "./ContactInformation.elements";
 import {ContactHeader} from "./ContactInformation.elements";
+import emailjs from 'emailjs-com';
 
 const ContactInformation = () => {
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('optikabegic', 'optikabegic', e.target, 'user_aHX0tJAHXHCFkAbUZMFq4')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
+    };
     return (
         <ContactBox>
 
@@ -22,27 +34,27 @@ const ContactInformation = () => {
                     <FormHeading color="black">Send us a message</FormHeading>
                     <FormIcon src="mail-icon.png"/>
                 </ContactHeader>
-                <ContactForm>
+                <ContactForm onSubmit={sendEmail}>
                    <FormBox>
                        <FormBox>
                            <FormLabel placeholder="John Doe">Ime i prezime:</FormLabel>
-                           <FormInput type="text" required/>
+                           <FormInput type="text" name="client" required/>
                        </FormBox>
                        <FormBox>
                            <FormLabel placeholder="+387">Telefon:</FormLabel>
-                           <FormInput type="text" required/>
+                           <FormInput type="text" name="phone" required/>
                        </FormBox>
                        <FormBox>
                            <FormLabel placeholder="johndoe@example.com">Email</FormLabel>
-                           <FormInput type="email" required/>
+                           <FormInput type="email" name="email" required/>
                        </FormBox>
                    </FormBox>
                     <FormBox>
                         <FormBox>
                             <FormLabel>Poruka</FormLabel>
-                            <FormInput type="text" required/>
+                            <FormInput type="textarea" name="message" required/>
                         </FormBox>
-                        <SendButton><BiPaperPlane size="22px" color="#fff"/></SendButton>
+                        <SendButton type="submit" value="Send"><BiPaperPlane size="22px" color="#fff"/></SendButton>
                     </FormBox>
                 </ContactForm>
             </ContactLeft>
