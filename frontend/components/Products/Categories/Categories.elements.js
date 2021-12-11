@@ -21,7 +21,6 @@ export const CategoriesContainer = styled(FlexContainer)`
 `;
 
 export const CategoryCard = styled.div`
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +30,7 @@ export const CategoryCard = styled.div`
 `;
 
 export const CategoryTitle = styled.h4`
+  cursor: pointer;
   font-weight: 600;
   font-size: 40px;
   text-align: center;

@@ -11,10 +11,13 @@ export const ProductsHeader = styled.h1`
   font-weight: 800;
   color: var(--black);
   font-size: 70px;
-  text-align: center;
   
   @media screen and (max-width: 1255px) {
     font-size: 50px;
+  }
+  
+  @media screen and (max-width: 950px) {
+    text-align: center;
   }
 `;
 
@@ -25,5 +28,8 @@ export const ProductsDescription = styled.p`
 
   @media screen and (max-width: 1255px) {
     font-size: 20px;
+  }
+  @media screen and (max-width: 950px) {
+    text-align: center;
   }
 `;

@@ -16,7 +16,7 @@ const Navbar = (props) => {
                 <Link href="/contact" passHref><NavItem color={props.color}>Kontakt</NavItem></Link>
                 <Link href="/" passHref><NavItem color={props.color}>Pregled</NavItem></Link>
             </NavMenu>
-            {props.color === "black" ? (<Link href="/"><Logo src="/logo.png" alt="logo"/></Link>) : (<Link href="/"><Logo src="/logowhite.png" alt="logo"/></Link>)}
+            {props.color === "black" ? (<Link href="/" passHref><Logo src="/logo.png" alt="logo"/></Link>) : (<Link href="/" passHref><Logo src="/logowhite.png" alt="logo"/></Link>)}
             <HamburgerIcon onClick={handleClick}>
                 {click ? (<FaTimes color={props.color} size="22px"/>) : (<FaBars color={props.color} size="22px"/>) }
             </HamburgerIcon>
