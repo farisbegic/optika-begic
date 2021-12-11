@@ -43,6 +43,7 @@ export const NavItem = styled.a`
 `;
 
 export const Logo = styled.img`
+  cursor: pointer;
   height: 70px;
   z-index: 1;
 `;

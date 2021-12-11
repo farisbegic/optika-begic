@@ -11,12 +11,12 @@ const Navbar = (props) => {
     return (
         <Nav click={click}>
             <NavMenu onClick={handleClick} click={click}>
-                <Link href="/" passHref><NavItem color={props.color}>Home</NavItem></Link>
-                <Link href="/" passHref><NavItem color={props.color}>Products</NavItem></Link>
-                <Link href="/contact" passHref><NavItem color={props.color}>Contact</NavItem></Link>
+                <Link href="/" passHref><NavItem color={props.color}>Početna</NavItem></Link>
+                <Link href="/products" passHref><NavItem color={props.color}>Produkti</NavItem></Link>
+                <Link href="/contact" passHref><NavItem color={props.color}>Kontakt</NavItem></Link>
                 <Link href="/" passHref><NavItem color={props.color}>Pregled</NavItem></Link>
             </NavMenu>
-            {props.color === "black" ? (<Logo src="/logo.png" alt="logo"/>) : (<Logo src="/logowhite.png" alt="logo"/>)}
+            {props.color === "black" ? (<Link href="/"><Logo src="/logo.png" alt="logo"/></Link>) : (<Link href="/"><Logo src="/logowhite.png" alt="logo"/></Link>)}
             <HamburgerIcon onClick={handleClick}>
                 {click ? (<FaTimes color={props.color} size="22px"/>) : (<FaBars color={props.color} size="22px"/>) }
             </HamburgerIcon>
