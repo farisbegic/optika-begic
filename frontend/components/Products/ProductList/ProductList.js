@@ -29,7 +29,7 @@ const ProductList = () => {
 
                     productList[0]?.list.map((product) => {
                         return (
-                            <ProductCard>
+                            <ProductCard key={product.id}>
                                 <ProductImage src={product.image}/>
                                 <CircleSection>
                                     <ImageCircle filled/>
