@@ -31,8 +31,8 @@ const ProductList = () => {
 
                     productList[0]?.list.map((product) => {
                         return (
-                            <Link href={`/products/${productList[0].slug}/${product.model}`}>
-                                <ProductCard key={product.id}>
+                            <Link href={`/products/${productList[0].slug}/${product.model}`} key={product.id} passHref>
+                                <ProductCard>
                                     <ProductImage src={product.image}/>
                                     <CircleSection>
                                         <ImageCircle filled/>

@@ -13,7 +13,6 @@ import {useRouter} from "next/router";
 import {products} from "../../../data/products";
 import Link from 'next/link';
 import {FaShareAlt, FaFacebookMessenger} from 'react-icons/fa';
-import { SideBySideMagnifier } from "react-image-magnifiers";
 
 const SingleProduct = () => {
     const router = useRouter();
