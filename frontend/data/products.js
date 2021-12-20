@@ -1,5 +1,6 @@
 export const products = [
     {
+        name: "Dioptrijske Naočale",
         slug: "dioptrijske-naocale",
         list: [
             {
@@ -29,6 +30,7 @@ export const products = [
         ]
     },
     {
+        name: "Sunčane Naočale",
         slug: "suncane-naocale",
         list: [
             {
@@ -58,6 +60,7 @@ export const products = [
         ]
     },
     {
+        name: "Dječije Naočale",
         slug: "djecije-naocale",
         list: [
             {
@@ -87,6 +90,7 @@ export const products = [
         ]
     },
     {
+        name: "Kontaktna Sočiva",
         slug: "kontaktna-sociva",
         list: [
             {
@@ -116,6 +120,7 @@ export const products = [
         ]
     },
     {
+        name: "Tečnosti za Leće",
         slug: "tecnosti-za-lece",
         list: [
             {

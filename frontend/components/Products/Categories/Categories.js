@@ -10,9 +10,11 @@ const Categories = () => {
             {
                 categories.map((category) => {
                     return (
-                        <CategoryCard key={category.id}>
-                            <Link href={'/products/' + category.slug} passHref><CategoryTitle>{category.name}</CategoryTitle></Link>
-                        </CategoryCard>
+                        <Link href={`/products/${category.slug}`}>
+                            <CategoryCard key={category.id}>
+                                <CategoryTitle>{category.name}</CategoryTitle>
+                            </CategoryCard>
+                        </Link>
                     )
                 })
             }

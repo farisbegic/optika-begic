@@ -60,6 +60,7 @@ export const ProductCard = styled.div`
   box-shadow: 0 10px 20px rgba(41, 41, 42, 0.2);
   border-radius: 8px;
   padding: 55px 20px;
+  cursor: pointer;
 `;
 
 export const ProductImage = styled.img`

@@ -11,11 +11,13 @@ import {
 import {Button, Card, Header} from "../../globalStyles";
 import {useRouter} from "next/router";
 import {products} from "../../../data/products";
+import Link from "next/link";
 
 const ProductList = () => {
     const router = useRouter();
-    const {query} = router;
-    var productList = products.filter((product) => product.slug === query.slug);
+    const {category} = router.query;
+    console.log(category);
+    var productList = products.filter((product) => product.slug === category);
     console.log(productList);
     return (
         <ProductListContainer>
@@ -29,18 +31,20 @@ const ProductList = () => {
 
                     productList[0]?.list.map((product) => {
                         return (
-                            <ProductCard key={product.id}>
-                                <ProductImage src={product.image}/>
-                                <CircleSection>
-                                    <ImageCircle filled/>
-                                    <ImageCircle />
-                                    <ImageCircle />
-                                </CircleSection>
-                                <ProductInformation>
-                                    <ProductBrand>{product.brand}</ProductBrand>
-                                    <ProductCypher>{product.model}</ProductCypher>
-                                </ProductInformation>
-                            </ProductCard>
+                            <Link href={`/products/${productList[0].slug}/${product.model}`}>
+                                <ProductCard key={product.id}>
+                                    <ProductImage src={product.image}/>
+                                    <CircleSection>
+                                        <ImageCircle filled/>
+                                        <ImageCircle />
+                                        <ImageCircle />
+                                    </CircleSection>
+                                    <ProductInformation>
+                                        <ProductBrand>{product.brand}</ProductBrand>
+                                        <ProductCypher>{product.model}</ProductCypher>
+                                    </ProductInformation>
+                                </ProductCard>
+                            </Link>
                         );
                     })
                 }

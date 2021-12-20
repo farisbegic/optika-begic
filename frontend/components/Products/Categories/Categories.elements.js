@@ -24,6 +24,7 @@ export const CategoryCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   height: 300px;
   box-shadow: 0 10px 20px rgba(41, 41, 42, 0.2);
   margin: 30px 0;
