@@ -13,15 +13,10 @@ import {useRouter} from "next/router";
 import {products} from "../../../data/products";
 import Link from "next/link";
 
-const ProductList = () => {
-    const router = useRouter();
-    const {category} = router.query;
-    console.log(category);
-    var productList = products.filter((product) => product.slug === category);
-    console.log(productList);
+const ProductList = (props) => {
     return (
         <ProductListContainer>
-            <ProductHeading>DIOPTRIJSKE NAOČALE</ProductHeading>
+            <ProductHeading>{props.products.name}</ProductHeading>
             <SearchContainer>
                 <SearchBar placeholder="Pretrazi brend ili model.." />
                 <Button filled>Pretrazi</ Button>
@@ -29,9 +24,9 @@ const ProductList = () => {
             <ProductsContainer>
                 {
 
-                    productList[0]?.list.map((product) => {
+                    props.products.list.map((product) => {
                         return (
-                            <Link href={`/products/${productList[0].slug}/${product.model}`} key={product.id} passHref>
+                            <Link href={`/products/${props.products.slug}/${product.model}`} key={product.id} passHref>
                                 <ProductCard>
                                     <ProductImage src={product.image}/>
                                     <CircleSection>

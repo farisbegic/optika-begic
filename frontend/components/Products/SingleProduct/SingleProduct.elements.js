@@ -36,7 +36,7 @@ export const ProductInformation = styled(FlexSection)`
   }
 `;
 
-export const PathLink = styled.a`
+export const PathLink = styled.div`
   text-decoration: none;
   color: #413A3A;
   font-weight: 400;

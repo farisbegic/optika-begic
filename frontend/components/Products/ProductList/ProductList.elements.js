@@ -12,6 +12,7 @@ export const ProductHeading = styled.h2`
   font-weight: 800;
   color: var(--black);
   text-align: center;
+  text-transform: uppercase;
 `;
 
 export const SearchContainer = styled(FlexSection)`

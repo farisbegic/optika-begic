@@ -125,3 +125,12 @@ export const Card = styled.div`
   box-shadow: 0 10px 20px rgba(41, 41, 42, 0.07);
   border-radius: 8px;
 `;
+
+export const NotFoundContainer = styled(FlexContainer)`
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 80px 0;
+`;
