@@ -1,18 +1,29 @@
 import React from 'react';
-import {CategoriesContainer, CategoryCard, CategoryLink, CategoryTitle} from "./Categories.elements";
-import {Card, Header} from "../../globalStyles";
-import {categories} from "../../../data/categories";
+import {
+    CategoriesContainer,
+    CategoryCard,
+    CategoryImage,
+    CategoryImageWrapper, CategoryInformation, CategoryNumber,
+    CategoryTitle, ImageOverlay
+} from "./Categories.elements";
+import {products} from "../../../data/products";
 import Link from 'next/link';
 
 const Categories = () => {
     return (
         <CategoriesContainer>
             {
-                categories.map((category) => {
+                products.map((category) => {
                     return (
                         <Link href={`/products/${category.slug}`} key={category.id} passHref>
                             <CategoryCard>
-                                <CategoryTitle>{category.name}</CategoryTitle>
+                                <CategoryImageWrapper>
+                                    <CategoryImage src={category.image} alt=""/>
+                                </CategoryImageWrapper>
+                                <CategoryInformation>
+                                    <CategoryTitle>{category.name}</CategoryTitle>
+                                    <CategoryNumber>{category.list.length}</CategoryNumber>
+                                </CategoryInformation>
                             </CategoryCard>
                         </Link>
                     )

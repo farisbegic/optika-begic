@@ -2,6 +2,7 @@ export const products = [
     {
         name: "Dioptrijske Naočale",
         slug: "dioptrijske-naocale",
+        image: "/diopter.jpg",
         list: [
             {
                 id: 1,
@@ -32,6 +33,7 @@ export const products = [
     {
         name: "Sunčane Naočale",
         slug: "suncane-naocale",
+        image: "/sunglasses.png",
         list: [
             {
                 id: 5,
@@ -62,6 +64,7 @@ export const products = [
     {
         name: "Dječije Naočale",
         slug: "djecije-naocale",
+        image: "/kids.jpg",
         list: [
             {
                 id: 9,
@@ -92,6 +95,7 @@ export const products = [
     {
         name: "Kontaktna Sočiva",
         slug: "kontaktna-sociva",
+        image: "/lens.jpg",
         list: [
             {
                 id: 13,
@@ -122,6 +126,7 @@ export const products = [
     {
         name: "Tečnosti za Leće",
         slug: "tecnosti-za-lece",
+        image: "/otopina.jpg",
         list: [
             {
                 id: 17,

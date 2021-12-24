@@ -2,13 +2,16 @@ import React from 'react';
 import Footer from "../../components/partials/Footer/Footer";
 import Navbar from "../../components/partials/Navbar/Navbar";
 import {
-    HeroButton, HeroContainer,
-    HeroDescription, HeroImage,
-    HeroInformation,
+    HeroContainer,
+    HeroImage,
     HeroTextContainer, NumberContainer, NumbersSection, NumbersText
 } from "../../components/Home/Hero/Hero.elements";
-import {Description, Header} from "../../components/globalStyles";
-import {ProductsDescription, ProductsHeader, ProductsInformation} from "../../components/Products/Hero/Hero.elements";
+import {
+    ProductsDescription,
+    ProductsHeader,
+    ProductsHeroImage,
+    ProductsInformation
+} from "../../components/Products/Hero/Hero.elements";
 import Categories from "../../components/Products/Categories/Categories";
 
 const Index = () => {
@@ -23,7 +26,7 @@ const Index = () => {
                         <ProductsDescription>Nađite nešto lijepo za sebe.</ProductsDescription>
                     </HeroTextContainer>
                 </ProductsInformation>
-                <HeroImage src="products-hero.svg"/>
+                <ProductsHeroImage src="products-hero.svg"/>
             </HeroContainer>
             <Categories />
             <Footer />
