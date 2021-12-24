@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     ProcessContainer,
-    ProcessDescription,
+    ProcessDescription, ProcessHeader,
     ProcessImage,
     ProcessSection,
     ProcessStep,
@@ -12,7 +12,7 @@ import {Header} from "../../globalStyles";
 const Process = () => {
     return (
         <ProcessContainer>
-            <Header>SVE NA JEDNOM MJESTU</Header>
+            <ProcessHeader>SVE NA JEDNOM MJESTU</ProcessHeader>
             <ProcessSection>
                 <ProcessStep>
                     <ProcessImage src="begin.svg" alt="process-step"/>

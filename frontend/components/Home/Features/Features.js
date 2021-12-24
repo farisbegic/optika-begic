@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    FeatureCards,
+    FeatureCards, FeatureHeader,
     FeatureIcon,
     FeatureImage,
     FeatureRow,
@@ -8,11 +8,13 @@ import {
     FeatureTitle
 } from "./Features.elements";
 import {Card} from "../../globalStyles";
+import {ProcessHeader} from "../Process/Process.elements";
 
 const Features = () => {
     return (
         <FeaturesContainer>
             <FeatureImage src="feature-image.png" />
+            <FeatureHeader>NAŠE USLUGE</FeatureHeader>
             <FeatureCards>
                 <FeatureRow>
                     <Card height="180px" width="200px" direction="column">

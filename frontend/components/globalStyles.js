@@ -57,6 +57,10 @@ export const Button = styled.a`
     font-size: 13px;
   }
 
+  @media screen and (max-width: 1400px){
+    padding: 10px 15px;
+  }
+
   @media screen and (max-width: 650px){
     font-size: 10px;
   }
@@ -78,11 +82,15 @@ export const Header = styled.h1`
   }
 
   @media screen and (max-width: 1200px){
-    font-size: 30px;
+    font-size: 25px;
   }
 
   @media screen and (max-width: 800px){
     font-size: 20px;
+  }
+
+  @media screen and (max-width: 500px){
+    font-size: 24px;
   }
 `;
 

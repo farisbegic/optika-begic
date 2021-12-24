@@ -1,20 +1,49 @@
 import styled from "styled-components";
-import {FlexContainer, FlexSection} from "../../globalStyles";
+import {FlexContainer, FlexSection, Header} from "../../globalStyles";
 
 export const FeaturesContainer = styled(FlexContainer)`
   margin: 40px 0;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 1080px) {
+    justify-content: center;
+    flex-direction: column;
+  }
+`;
+
+export const FeatureHeader = styled(Header)`
+  display: none;
+  
+  @media screen and (max-width: 1080px) {
+    display: block;
+    font-size: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (max-width: 700px) {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 30px;
+    padding-bottom: 70px;
+  }
 `;
 
 export const FeatureImage = styled.img`
   width: 500px;
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1300px) {
     width: 400px;
   }
 
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1200px) {
+    width: 300px;
+  }
+
+  @media screen and (max-width: 1080px) {
     display: none;
   }
 `;

@@ -6,13 +6,10 @@ export const HeroContainer = styled(FlexContainer)`
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 730px){
-    margin: 40px 0;
+  @media screen and (max-width: 1000px){
+    margin: 0
   }
 
-  @media screen and (max-width: 600px){
-    margin: 20px 0;
-  }
 `;
 
 export const HeroInformation = styled(FlexSection)`
@@ -23,11 +20,23 @@ export const HeroInformation = styled(FlexSection)`
   @media screen and (max-width: 950px){
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 50%;
   }
 
-  @media screen and (max-width: 600px){
-    flex-direction: column;
+  @media screen and (max-width: 800px){
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+  }
+
+  @media screen and (max-width: 550px){
+    width: 50%;
+  }
+
+  @media screen and (max-width: 500px){
+    margin: auto;
+    width: 80%;
+    text-align: center;
   }
 `;
 
@@ -39,8 +48,11 @@ export const HeroDescription = styled(Description)`
   }
   
   @media screen and (max-width: 600px){
-    text-align: center;
-    padding: 10px 20px;
+    padding: 20px 0;
+  }
+
+  @media screen and (max-width: 500px){
+    font-size: 14px;
   }
 `;
 
@@ -55,21 +67,33 @@ export const HeroImage = styled.img`
     width: 300px;
   }
 
-  @media screen and (max-width: 950px){
+  @media screen and (max-width: 700px){
+    width: 230px;
+  }
+
+  @media screen and (max-width: 550px){
+    width: 180px;
+  }
+
+  @media screen and (max-width: 500px){
     display: none;
   }
 `;
 
 export const HeroButton = styled(Button)`
   margin-bottom: 20px;
+
+  @media screen and (max-width: 500px){
+    font-size: 13px;
+  }
 `;
 
 export const HeroTextContainer = styled.div`
   @media screen and (max-width: 600px) {
     display: flex;
-    align-items: center;
     flex-direction: column;
   }
+  
 `;
 
 export const NumberContainer = styled.div`
@@ -79,16 +103,7 @@ export const NumberContainer = styled.div`
   align-items: center;
 
   @media screen and (max-width: 950px){
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media screen and (max-width: 600px){
-    margin: auto;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+    display: none;
   }
 `;
 
