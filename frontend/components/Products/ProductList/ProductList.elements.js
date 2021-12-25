@@ -183,13 +183,7 @@ export const ProductBrand = styled.h4`
   text-transform: uppercase;
 
   @media screen and (max-width: 660px){
-    font-size: 24px;
-  }
-  @media screen and (max-width: 590px){
-    font-size: 20px;
-  }
-  @media screen and (max-width: 470px){
-    font-size: 16px;
+    font-size: 26px;
   }
 `;
 
@@ -200,12 +194,6 @@ export const ProductModel = styled.p`
   text-align: center;
 
   @media screen and (max-width: 660px){
-    font-size: 13px;
-  }
-  @media screen and (max-width: 590px){
-    font-size: 12px;
-  }
-  @media screen and (max-width: 470px){
-    font-size: 10px;
+    font-size: 14px;
   }
 `;
