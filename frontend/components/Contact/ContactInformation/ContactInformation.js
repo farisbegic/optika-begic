@@ -3,7 +3,7 @@ import {BiPaperPlane} from 'react-icons/bi';
 import {
     ContactBox,
     ContactForm,
-    ContactLeft, ContactPart, ContactRight,
+    ContactLeft, ContactPart, ContactRight, ContactSection,
     FormBox,
     FormHeading,
     FormIcon,
@@ -28,7 +28,6 @@ const ContactInformation = () => {
     };
     return (
         <ContactBox>
-
             <ContactLeft>
                 <ContactHeader>
                     <FormHeading color="black">Send us a message</FormHeading>
@@ -60,34 +59,36 @@ const ContactInformation = () => {
             </ContactLeft>
 
             <ContactRight>
-                <FormHeading color="white">Contact information</FormHeading>
-                <ContactPart>
-                    <FormIcon src="location.png"/>
-                    <InformationSection>
-                        <InformationText>126. Ilijaške brigade 11</InformationText>
-                        <InformationText>Ilijaš, 71380</InformationText>
-                    </InformationSection>
-                </ContactPart>
-                <ContactPart>
-                    <FormIcon src="time.png"/>
-                    <InformationSection>
-                        <InformationText>Pon - Pet: 10:00 - 17:00</InformationText>
-                        <InformationText>Sub: 10:00 - 14:00</InformationText>
-                    </InformationSection>
-                </ContactPart>
-                <ContactPart>
-                    <FormIcon src="phone.png"/>
-                    <InformationSection>
-                        <InformationText>+387 61 400 789</InformationText>
-                    </InformationSection>
-                </ContactPart>
-                <ContactPart>
-                    <FormIcon src="location.png"/>
-                    <InformationSection>
-                        <InformationText>126. Ilijaške brigade 11</InformationText>
-                        <InformationText>Ilijaš, 71380</InformationText>
-                    </InformationSection>
-                </ContactPart>
+                <FormHeading color="white">Contact Information</FormHeading>
+                <ContactSection>
+                    <ContactPart>
+                        <FormIcon src="location.png"/>
+                        <InformationSection>
+                            <InformationText>126. Ilijaške brigade 11</InformationText>
+                            <InformationText>Ilijaš, 71380</InformationText>
+                        </InformationSection>
+                    </ContactPart>
+                    <ContactPart>
+                        <FormIcon src="time.png"/>
+                        <InformationSection>
+                            <InformationText>Pon - Pet: 10:00 - 17:00</InformationText>
+                            <InformationText>Sub: 10:00 - 14:00</InformationText>
+                        </InformationSection>
+                    </ContactPart>
+                    <ContactPart>
+                        <FormIcon src="phone.png"/>
+                        <InformationSection>
+                            <InformationText>+387 61 400 789</InformationText>
+                        </InformationSection>
+                    </ContactPart>
+                    <ContactPart>
+                        <FormIcon src="location.png"/>
+                        <InformationSection>
+                            <InformationText>126. Ilijaške brigade 11</InformationText>
+                            <InformationText>Ilijaš, 71380</InformationText>
+                        </InformationSection>
+                    </ContactPart>
+                </ContactSection>
             </ContactRight>
 
         </ContactBox>

@@ -5,14 +5,15 @@ export const ContactDetailsContainer = styled(FlexContainer)`
   justify-content: space-between;
   margin: 50px 0;
 
-  @media screen and (max-width: 400px){
-    justify-content: center;
+  @media screen and (max-width: 450px){
+    margin: 0 0 30px 0;
   }
 `;
 
 export const ContactDetailsText = styled(FlexSection)`
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   width: 50%;
 
   @media screen and (max-width: 435px){
@@ -22,15 +23,21 @@ export const ContactDetailsText = styled(FlexSection)`
   }
 `;
 
-export const ContactHeader = styled(Header)`
+export const ContactHeader = styled.h1`
+  font-weight: 800;
+  font-size: 48px;
   color: var(--white);
   
-  @media screen and (max-width: 1350px){
+  @media screen and (max-width: 1200px){
     font-size: 40px;
   }
 
-  @media screen and (max-width: 850px){
+  @media screen and (max-width: 900px){
     font-size: 30px;
+  }
+
+  @media screen and (max-width: 435px){
+    font-size: 40px;
   }
 `;
 
@@ -38,11 +45,15 @@ export const ContactDescription = styled(Description)`
   color: var(--white);
   width: 80%;
 
-  @media screen and (max-width: 850px){
+  @media screen and (max-width: 900px){
     font-size: 13px;
     width: 100%;
   }
-  
+
+  @media screen and (max-width: 435px){
+    font-size: 16px;
+    width: 90%;
+  }
 `;
 
 export const WorldImage = styled.img`

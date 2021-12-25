@@ -3,8 +3,8 @@ import {FlexContainer, FlexSection} from "../../globalStyles";
 
 export const ContactBox = styled(FlexSection)`
   position: relative;
-  top: -50px;
   margin: 0 150px;
+  height: 450px;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
   
   @media screen and (max-width: 1150px){
@@ -26,7 +26,7 @@ export const ContactBox = styled(FlexSection)`
 
 export const ContactLeft = styled(FlexSection)`
   background-color: var(--white);
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 60%;
@@ -38,48 +38,60 @@ export const ContactLeft = styled(FlexSection)`
 `;
 
 export const ContactHeader = styled(FlexSection)`
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 22px 0;
+  padding: 0 100px;
 
-  @media screen and (max-width: 500px){
-    flex-direction: column;
+  @media screen and (max-width: 600px){
+    padding: 22px 50px;
   }
 `;
 
 export const FormHeading = styled.h4`
-  font-size: 20px;
-  padding: 10px 0;
+  font-size: 25px;
+  width: 100%;
   font-weight: 700;
   color: ${props => props.color};
+
+  @media screen and (max-width: 500px){
+    font-size: 20px;
+  }
 `;
 
 export const FormIcon = styled.img`
   width: 35px;
+
+  @media screen and (max-width: 450px){
+    width: 32px;
+  }
 `;
 
 export const ContactForm = styled.form`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 22px 100px;
   align-items: flex-start;
   color: var(--white);
   width: 100%;
-  padding: 45px 90px 90px;
 
-  @media screen and (max-width: 550px){
+  @media screen and (max-width: 1450px){
     flex-direction: column;
   }
 
-  @media screen and (max-width: 450px){
-    width: auto;
-    padding: 0;
+  @media screen and (max-width: 600px){
+    width: 100%;
+    padding: 22px 50px;
   }
 `;
 
 export const FormBox = styled(FlexSection)`
   flex-direction: column;
-  margin: 0 15px;
+  width: 95%;
+
+  @media screen and (max-width: 1450px){
+    width: 100%;
+  }
 `;
 
 export const FormLabel = styled.label`
@@ -91,9 +103,9 @@ export const FormLabel = styled.label`
 
 export const FormInput = styled.input`
   border: none;
+  outline: none;
   padding: 10px 0;
   border-bottom: 1px solid #E5E5E5;
-  outline: none;
 `;
 
 export const SendButton = styled.button`
@@ -104,42 +116,56 @@ export const SendButton = styled.button`
   align-items: center;
   height: 40px;
   width: 40px;
-  margin: 10px;
+  margin: 20px 0;
   background-color: var(--orange);
   border-radius: 50%;
 `;
 
 export const ContactRight = styled(FlexSection)`
   background-color: var(--orange);
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   width: 40%;
+  padding: 40px 100px;
+
+  @media screen and (max-width: 1450px){
+    align-items: flex-start;
+    padding: 40px 70px;
+  }
+
+  @media screen and (max-width: 1250px){
+    padding: 40px;
+  }
+
+  @media screen and (max-width: 1150px){
+    padding: 30px 100px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px){
+    padding: 30px 50px;
+  }
+`;
+
+export const ContactSection = styled(FlexSection)`
+  flex-direction: column;
+  width: 100%;
 
   @media screen and (max-width: 1150px){
     padding: 30px 0;
-    width: 100%;
   }
 `;
 
 export const ContactPart = styled(FlexSection)`
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
-  width: 50%;
+  padding: 15px 0;
+  width: 100%;
 
-  @media screen and (max-width: 1490px){
-    width: 80%;
-  }
-  
   @media screen and (max-width: 1150px){
-    width: 50%;
+    justify-content: space-between;
   }
-
-  @media screen and (max-width: 600px){
-    width: 90%;
-  }
-  
 `;
 
 export const InformationSection = styled(FlexSection)`
@@ -153,7 +179,7 @@ export const InformationText = styled.h5`
   font-size: 17px;
   font-weight: 500;
 
-  @media screen and (max-width: 1150px){
+  @media screen and (max-width: 450px){
     font-size: 14px;
   }
 `;
