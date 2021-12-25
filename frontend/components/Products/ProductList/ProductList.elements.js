@@ -59,10 +59,13 @@ export const ResultsContainer = styled(FlexSection)`
   max-height: 150px;
   overflow: auto;
   margin: 5px 0;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: space-between;
 `;
 
 export const SearchResult = styled(FlexSection)`
