@@ -110,7 +110,7 @@ export const ProductsContainer = styled(FlexSection)`
     grid-template-columns: repeat(2,200px);
   }
   @media screen and (max-width: 470px){
-    grid-template-columns: repeat(2,150px);
+    grid-template-columns: repeat(2,160px);
   }
 `;
 
@@ -185,6 +185,9 @@ export const ProductBrand = styled.h4`
   @media screen and (max-width: 660px){
     font-size: 26px;
   }
+  @media screen and (max-width: 400px){
+    font-size: 22px;
+  }
 `;
 
 export const ProductModel = styled.p`
@@ -195,5 +198,9 @@ export const ProductModel = styled.p`
 
   @media screen and (max-width: 660px){
     font-size: 14px;
+  }
+  @media screen and (max-width: 400px){
+    font-size: 12px;
+    font-weight: 300;
   }
 `;
