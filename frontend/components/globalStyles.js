@@ -51,7 +51,7 @@ export const Button = styled.a`
   text-align: center;
   background-color: ${props => props.filled ? "var(--orange)" : "var(--white)"};
   border: ${props => props.filled ? "none" : "1px solid var(--orange)"};
-  border-radius: 10px;
+  border-radius: ${props => props.radius ? props.radius : "0"};
 
   @media screen and (max-width: 1400px){
     font-size: 13px;

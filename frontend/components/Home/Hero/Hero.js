@@ -16,7 +16,7 @@ const Hero = () => {
                     <Header>BESPLATAN PREGLED</Header>
                     <Header>DOKTORA SPECIJALISTE</Header>
                     <HeroDescription>Besplatan pregled doktora specijaliste utorkom od 16:00. Naručite se i provjerite Vaš vid na vrijeme.</HeroDescription>
-                    <HeroButton filled href="/products">POGLEDAJTE NAŠU PONUDU</HeroButton>
+                    <HeroButton filled href="/products" radius="10px">POGLEDAJTE NAŠU PONUDU</HeroButton>
                 </HeroTextContainer>
                 <NumberContainer>
                     <NumbersSection>
