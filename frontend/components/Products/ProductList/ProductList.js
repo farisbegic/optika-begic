@@ -1,12 +1,25 @@
 import React from 'react';
 import {
-    CircleSection, ImageCircle,
-    ProductBrand, ProductCard, ProductModel,
-    ProductHeading, ProductImage, ProductInformation,
+    CircleSection,
+    ImageCircle,
+    ProductBrand,
+    ProductCard,
+    ProductModel,
+    ProductHeading,
+    ProductImage,
+    ProductInformation,
     ProductListContainer,
-    ProductsContainer, ResultsContainer,
+    ProductsContainer,
+    ResultsContainer,
     SearchBar,
-    SearchContainer, SearchImage, SearchResult, SearchResultImage, SearchResultText, SearchSection, ProductHeader
+    SearchContainer,
+    SearchImage,
+    SearchResult,
+    SearchResultImage,
+    SearchResultText,
+    SearchSection,
+    ProductHeader,
+    MoreButton
 } from "./ProductList.elements";
 import {Button} from "../../globalStyles";
 import Link from "next/link";

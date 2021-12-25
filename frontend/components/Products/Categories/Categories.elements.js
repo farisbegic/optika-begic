@@ -7,15 +7,26 @@ export const CategoriesContainer = styled(FlexContainer)`
   grid-template-columns: repeat(3,350px);
   justify-content: space-between;
   @media screen and (max-width: 1540px){
-    grid-template-columns: repeat(2,325px);
-    justify-content: space-evenly;
+    grid-template-columns: repeat(3,325px);
   }
-  @media screen and (max-width: 1200px){
-    grid-template-columns: repeat(2,325px);
-    justify-content: space-between;
+  @media screen and (max-width: 1320px){
+    grid-template-columns: repeat(2,350px);
   }
-  @media screen and (max-width: 890px){
-    grid-template-columns: repeat(1,325px);
+  @media screen and (max-width: 1050px){
+    grid-template-columns: repeat(2,300px);
+  }
+  @media screen and (max-width: 820px){
+    grid-template-columns: repeat(2,250px);
+  }
+  @media screen and (max-width: 820px){
+    grid-template-columns: repeat(2,280px);
+  }
+  @media screen and (max-width: 670px){
+    grid-template-columns: repeat(1,350px);
+    justify-content: center;
+  }
+  @media screen and (max-width: 500px){
+    grid-template-columns: repeat(1,300px);
     justify-content: center;
   }
 `;
@@ -49,6 +60,10 @@ export const CategoryInformation = styled(FlexSection)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 500px){
+    height: 80%
+  }
 `;
 
 export const CategoryTitle = styled.h4`
@@ -58,6 +73,8 @@ export const CategoryTitle = styled.h4`
   text-align: center;
   color: var(--black);
   text-transform: uppercase;
+  
+  
 `;
 
 export const CategoryNumber = styled.h4`

@@ -104,8 +104,13 @@ export const ProductsContainer = styled(FlexSection)`
     grid-template-columns: repeat(2,280px);
   }
   @media screen and (max-width: 660px){
-    grid-template-columns: repeat(1,300px);
-    justify-content: center;
+    grid-template-columns: repeat(2,250px);
+  }
+  @media screen and (max-width: 590px){
+    grid-template-columns: repeat(2,200px);
+  }
+  @media screen and (max-width: 470px){
+    grid-template-columns: repeat(2,150px);
   }
 `;
 
@@ -120,11 +125,25 @@ export const ProductCard = styled.div`
   border-radius: 8px;
   padding: 55px 20px;
   cursor: pointer;
+
+  @media screen and (max-width: 660px){
+    padding: 35px 20px;
+  }
 `;
 
 export const ProductImage = styled.img`
   width: 200px;
   object-fit: fill;
+
+  @media screen and (max-width: 660px){
+    width: 170px;
+  }
+  @media screen and (max-width: 590px){
+    width: 120px;
+  }
+  @media screen and (max-width: 470px){
+    width: 100px;
+  }
 `;
 
 export const ImageCircle = styled.div`
@@ -148,6 +167,14 @@ export const ProductInformation = styled(FlexSection)`
   padding-top: 30px;
 `;
 
+export const MoreButton = styled.p`
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--light-orange);
+  text-align: center;
+`;
+
 export const ProductBrand = styled.h4`
   font-size: 34px;
   font-weight: 700;
@@ -155,8 +182,14 @@ export const ProductBrand = styled.h4`
   text-align: center;
   text-transform: uppercase;
 
-  @media screen and (max-width: 620px){
-    font-size: 30px;
+  @media screen and (max-width: 660px){
+    font-size: 24px;
+  }
+  @media screen and (max-width: 590px){
+    font-size: 20px;
+  }
+  @media screen and (max-width: 470px){
+    font-size: 16px;
   }
 `;
 
@@ -166,7 +199,13 @@ export const ProductModel = styled.p`
   color: rgba(198, 197, 197, 1);
   text-align: center;
 
-  @media screen and (max-width: 620px){
-    font-size: 15px;
+  @media screen and (max-width: 660px){
+    font-size: 13px;
+  }
+  @media screen and (max-width: 590px){
+    font-size: 12px;
+  }
+  @media screen and (max-width: 470px){
+    font-size: 10px;
   }
 `;
