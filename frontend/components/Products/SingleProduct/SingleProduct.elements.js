@@ -9,30 +9,57 @@ export const ProductsContainer = styled(FlexContainer)`
   @media screen and (max-width: 1000px) {
     margin: 0;
   }
-
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 530px) {
     flex-direction: column-reverse;
   }
 `;
 
 export const ProductImage = styled.img`
   width: 50%;
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 530px) {
     width: 100%;
   }
 `;
 
 export const ProductInformation = styled(FlexSection)`
-  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  width: 38%;
+  width: 40%;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1600px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 1475px) {
     width: 50%;
   }
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 530px) {
     width: 100%;
+  }
+`;
+
+export const InformationContainer = styled(FlexSection)`
+  flex-direction: column;
+`;
+
+export const ShareContainer = styled(FlexSection)`
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 10px;
+
+  @media screen and (max-width: 1600px) {
+    flex-direction: row;
+    padding: 20px 0;
+  }
+`;
+
+export const SocialIcon = styled(FlexSection)`
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 5px 0;
+  
+  @media screen and (max-width: 1600px) {
+    padding: 0 5px 0 0;
   }
 `;
 
@@ -97,26 +124,33 @@ export const ButtonContainer = styled(FlexSection)`
   display: flex;
   width: 100%;
   
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1300px) {
     flex-direction: column;
+  }
+  @media screen and (max-width: 530px) {
+    flex-direction: row;
   }
 `;
 
-export const Button = styled.button`
+export const Button = styled.a`
+  cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--white);
   border: 1px solid rgba(0, 0, 0, 0.6);
-  padding: 7px 25px;
+  padding: 10px;
   width: 200px;
   margin-right: 30px;
 
-  @media screen and (max-width: 1000px) {
-    margin: 5px 0;
+  @media screen and (max-width: 1300px) {
+    margin-bottom: 5px;
   }
-
   @media screen and (max-width: 730px) {
     width: 170px;
+  }
+  @media screen and (max-width: 530px) {
+    margin-right: 5px;
   }
 `;
 
