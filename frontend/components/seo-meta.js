@@ -20,7 +20,7 @@ const MetaData = (props) => (
         <meta property="og:image" content={props.image} />
         <meta property="og:image:width" content="1179" />
         <meta property="og:image:height" content="603" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
         <link
             rel="canonical"
             href={
