@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {FlexContainer, FlexSection, Header} from "../../globalStyles";
 
 export const ProcessContainer = styled(FlexContainer)`
-  margin: 70px 0;
+  margin-top: 120px;
   flex-direction: column;
   align-items: center;
 `;

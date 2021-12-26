@@ -7,10 +7,14 @@ const Brands = () => {
         <BrandsContainer>
          <Line />
             <BrandList>
-                <BrandLogo src="ray-ban.png" alt="brand"/>
-                <BrandLogo src="prada.png" alt="brand"/>
-                <BrandLogo src="tom-ford.png" alt="brand"/>
-                <BrandLogo src="dolce-gabbana.png" alt="brand"/>
+                <BrandLogo src="/brands/ray-ban.png" alt="brand"/>
+                <BrandLogo src="/brands/prada.png" alt="brand"/>
+                <BrandLogo src="/brands/tom-ford.png" alt="brand"/>
+                <BrandLogo src="/brands/dolce-gabbana.png" alt="brand"/>
+                <BrandLogo src="/brands/ax.png" alt="brand"/>
+                <BrandLogo src="/brands/carrera.png" alt="brand"/>
+                <BrandLogo src="/brands/ea.png" alt="brand"/>
+                <BrandLogo src="/brands/mexx.jpg" alt="brand"/>
             </BrandList>
          <Line />
         </BrandsContainer>

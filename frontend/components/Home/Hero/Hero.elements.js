@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {Button, Description, FlexContainer, FlexSection} from "../../globalStyles";
 
 export const HeroContainer = styled(FlexContainer)`
-  margin: 30px 0;
+  margin: 60px 0;
   justify-content: space-between;
   align-items: center;
 
