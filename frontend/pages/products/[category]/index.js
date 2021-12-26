@@ -6,6 +6,7 @@ import {useRouter} from "next/router";
 import {products} from "../../../data/products";
 import Image from "next/image";
 import {NotFoundContainer} from "../../../components/globalStyles";
+import MetaData from "../../../components/seo-meta";
 
 const Index = () => {
     const router = useRouter();
@@ -13,7 +14,13 @@ const Index = () => {
     var productList = products.filter((product) => product.slug === category);
 
     return (
-        <div>
+        <>
+            <MetaData
+                path='/products'
+                title='Produkti'
+                description="Officijelna stranica Optika Begić"
+                image='/logo.png'
+            />
             <Navbar color="black" />
             {
                 productList[0] ? (
@@ -21,7 +28,7 @@ const Index = () => {
                 ) : <NotFoundContainer><Image src="/notfound.svg" height="300px" width="300px"/></NotFoundContainer>
             }
             <Footer />
-        </div>
+        </>
     );
 };
 

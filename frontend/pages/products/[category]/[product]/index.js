@@ -6,6 +6,7 @@ import {useRouter} from "next/router";
 import {products} from "../../../../data/products";
 import Image from 'next/image';
 import {NotFoundContainer} from "../../../../components/globalStyles";
+import MetaData from "../../../../components/seo-meta";
 
 const Index = () => {
     const router = useRouter();
@@ -21,6 +22,12 @@ const Index = () => {
 
     return (
         <>
+            <MetaData
+                path='/products'
+                title='Produkti'
+                description="Officijelna stranica Optika Begić"
+                image='/logo.png'
+            />
             <Navbar color="black" />
             {
                 product[0] && productList[0] ? (

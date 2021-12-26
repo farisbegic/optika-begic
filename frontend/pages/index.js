@@ -5,9 +5,16 @@ import Footer from "../components/partials/Footer/Footer";
 import Process from "../components/Home/Process/Process";
 import Features from "../components/Home/Features/Features";
 import Brands from "../components/Home/Brands/Brands";
+import MetaData from "../components/seo-meta";
 const Index = () => {
     return (
         <>
+            <MetaData
+                path='/'
+                title='Početna'
+                description="Officijelna stranica Optika Begić"
+                image='/logo.png'
+            />
             <Navbar color="black"/>
             <Hero />
             <Process />

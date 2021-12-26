@@ -18,25 +18,25 @@ const Features = () => {
             <FeatureCards>
                 <FeatureRow>
                     <Card height="180px" width="200px" direction="column">
-                        <FeatureIcon src="leca.png"/>
+                        <FeatureIcon src="leca.png" alt="feature"/>
                         <FeatureTitle>IZRADA KONTAKTNIH LEĆA PO ZELJI</FeatureTitle>
                     </Card>
                     <Card height="180px" width="200px" direction="column">
-                        <FeatureIcon src="zastita.png"/>
+                        <FeatureIcon src="zastita.png" alt="feature"/>
                         <FeatureTitle>IZRADA NAOČALA SA ZAŠTITAMA</FeatureTitle>
                     </Card>
                 </FeatureRow>
                 <FeatureRow>
                     <Card height="180px" width="200px" direction="column">
-                        <FeatureIcon src="progressive-glass.png"/>
+                        <FeatureIcon src="progressive-glass.png" alt="feature"/>
                         <FeatureTitle>IZRADA PROGRESIVNIH STAKALA</FeatureTitle>
                     </Card>
                     <Card height="180px" width="200px" direction="column">
-                        <FeatureIcon src="sunglass.png"/>
+                        <FeatureIcon src="sunglass.png" alt="feature"/>
                         <FeatureTitle>IZRADA SUNČANIH STAKALA S DIOPTRIJOM</FeatureTitle>
                     </Card>
                     <Card height="180px" width="200px" direction="column">
-                        <FeatureIcon src="glasses.png"/>
+                        <FeatureIcon src="glasses.png" alt="feature"/>
                         <FeatureTitle>IZRADA DIOPTRIJSKIH NAOČALA</FeatureTitle>
                     </Card>
                 </FeatureRow>

@@ -13,10 +13,17 @@ import {
     ProductsInformation
 } from "../../components/Products/Hero/Hero.elements";
 import Categories from "../../components/Products/Categories/Categories";
+import MetaData from "../../components/seo-meta";
 
 const Index = () => {
     return (
         <>
+            <MetaData
+                path='/products'
+                title='Produkti'
+                description="Officijelna stranica Optika Begić"
+                image='/logo.png'
+            />
             <Navbar color="black" />
             <HeroContainer>
                 <ProductsInformation>
