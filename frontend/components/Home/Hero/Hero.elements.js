@@ -2,18 +2,16 @@ import styled from "styled-components";
 import {Button, Description, FlexContainer, FlexSection} from "../../globalStyles";
 
 export const HeroContainer = styled(FlexContainer)`
-  margin: 80px 0;
+  margin: 30px 0;
   justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 1000px){
     margin: 0
   }
-
   @media screen and (max-width: 640px){
     flex-direction: column-reverse;
   }
-
 `;
 
 export const HeroInformation = styled(FlexSection)`

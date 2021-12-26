@@ -4,8 +4,11 @@ import {FlexContainer, FlexSection} from "../../globalStyles";
 export const CategoriesContainer = styled(FlexContainer)`
   margin: 40px 0;
   display: grid;
-  grid-template-columns: repeat(3,350px);
+  grid-template-columns: repeat(4,350px);
   justify-content: space-between;
+  @media screen and (max-width: 1800px){
+    grid-template-columns: repeat(3,325px);
+  }
   @media screen and (max-width: 1540px){
     grid-template-columns: repeat(3,325px);
   }
@@ -22,11 +25,14 @@ export const CategoriesContainer = styled(FlexContainer)`
     grid-template-columns: repeat(2,280px);
   }
   @media screen and (max-width: 670px){
-    grid-template-columns: repeat(1,350px);
+    grid-template-columns: repeat(2,250px);
+  }
+  @media screen and (max-width: 580px){
+    grid-template-columns: repeat(1,280px);
     justify-content: center;
   }
-  @media screen and (max-width: 500px){
-    grid-template-columns: repeat(1,300px);
+  @media screen and (max-width: 580px){
+    grid-template-columns: repeat(1,250px);
     justify-content: center;
   }
 `;
@@ -37,10 +43,15 @@ export const CategoryCard = styled.div`
   justify-content: space-between;
   flex-direction: column;
   cursor: pointer;
-  height: 500px;
-  box-shadow: 0 10px 20px rgba(41, 41, 42, 0.2);
   margin: 30px 0;
-  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(41, 41, 42, 0.07);
+  border-radius: 8px;
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(41, 41, 42, 0.3);
+    transform: scale(1.02);
+    transition: 0.3s linear;
+  }
 `;
 
 export const CategoryImageWrapper = styled.div`
@@ -53,6 +64,13 @@ export const CategoryImage = styled.img`
   width: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
+
+  @media screen and (max-width: 580px){
+    height: 270px;
+  }
+  @media screen and (max-width: 440px){
+    height: 230px;
+  }
 `;
 
 export const CategoryInformation = styled(FlexSection)`
@@ -60,6 +78,7 @@ export const CategoryInformation = styled(FlexSection)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 20px 0;
 
   @media screen and (max-width: 500px){
     height: 80%
@@ -67,19 +86,28 @@ export const CategoryInformation = styled(FlexSection)`
 `;
 
 export const CategoryTitle = styled.h4`
-  font-weight: 600;
-  font-size: 30px;
+  font-weight: 700;
+  font-size: 34px;
   padding: 10px 40px;
   text-align: center;
   color: var(--black);
   text-transform: uppercase;
-  
-  
+
+  @media screen and (max-width: 1050px){
+    font-size: 28px;
+  }
+  @media screen and (max-width: 670px){
+    font-size: 24px;
+  }
 `;
 
-export const CategoryNumber = styled.h4`
+export const CategoryNumber = styled.sup`
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   color: var(--black);
+
+  @media screen and (max-width: 600px){
+    font-size: 18px;
+  }
 `;

@@ -19,7 +19,7 @@ import {
     SearchResultText,
     SearchSection,
     ProductHeader,
-    MoreButton
+    MoreButton, ProductButton
 } from "./ProductList.elements";
 import {Button} from "../../globalStyles";
 import Link from "next/link";
@@ -66,15 +66,14 @@ const ProductList = (props) => {
 
                     props.products.list.map((product) => {
                         return (
-                            <Link href={`/products/${props.products.slug}/${product.model}`} key={product.id} passHref>
-                                <ProductCard>
-                                    <ProductImage src={product.image}/>
-                                    <ProductInformation>
-                                        <ProductBrand>{product.brand}</ProductBrand>
-                                        <ProductModel>{product.model}</ProductModel>
-                                    </ProductInformation>
-                                </ProductCard>
-                            </Link>
+                            <ProductCard key={product.id}>
+                                <ProductImage src={product.image}/>
+                                <ProductInformation>
+                                    <ProductBrand>{product.brand}</ProductBrand>
+                                    <ProductModel>{product.model}</ProductModel>
+                                    <Link href={`/products/${props.products.slug}/${product.model}`}><ProductButton>POGLEDAJ VIŠE</ProductButton></Link>
+                                </ProductInformation>
+                            </ProductCard>
                         );
                     })
                 }

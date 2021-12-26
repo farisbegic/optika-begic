@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     --light-orange: rgba(243, 182, 24, 0.5);
     --black: #000;
     --white: #fff;
+    --light-gray: #35363A;
   }
 
   ::selection{

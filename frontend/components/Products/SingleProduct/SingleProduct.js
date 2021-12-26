@@ -4,7 +4,7 @@ import {
     ButtonContainer, ButtonText, InformationContainer,
     PathLink,
     ProductBrand, ProductCategory, ProductDescription, ProductDetails,
-    ProductImage,
+    ProductImage, ProductImageMobile,
     ProductInformation,
     ProductModel,
     ProductsContainer, ShareContainer, SocialIcon
@@ -48,8 +48,10 @@ const SingleProduct = (prop) => {
                     <ProductDetails>
                         <ProductBrand>{prop.product.brand}</ProductBrand>
                         <ProductModel>{prop.product.model}</ProductModel>
+                        <ProductImageMobile src={prop.product.image} alt="product"/>
                         <ProductDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper semper morbi feugiat porta cras feugiat in pellentesque. In quis ultrices dignissim adipiscing cursus euismod curabitur imperdiet congue. Accumsan donec consectetur pharetra, amet cursus sit. Pulvinar duis cras neque aliquet sed cursus aliquam auctor nulla. Fusce augue vitae felis, volutpat. Sem purus turpis blandit viverra.</ProductDescription>
                         <ProductCategory>Category: {prop.categoryName}</ProductCategory>
+                        <ProductDescription>Ukoliko imate pitanje za ovaj artikal, kopirajte link i pošaljite upit na našu Facebook Stranicu.</ProductDescription>
                     </ProductDetails>
                     <ButtonContainer>
                         <Button onClick={copy}>

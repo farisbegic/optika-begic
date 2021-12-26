@@ -17,7 +17,15 @@ export const ProductsContainer = styled(FlexContainer)`
 export const ProductImage = styled.img`
   width: 50%;
   @media screen and (max-width: 530px) {
+    display: none;
+  }
+`;
+
+export const ProductImageMobile = styled.img`
+  display: none;
+  @media screen and (max-width: 530px) {
     width: 100%;
+    display: block;
   }
 `;
 
@@ -86,7 +94,7 @@ export const ProductBrand = styled.h4`
 `;
 
 export const ProductDetails = styled.div`
-  margin: 40px 0;
+  margin-top: 20px;
 `;
 
 export const ProductModel = styled.h6`
@@ -151,6 +159,7 @@ export const Button = styled.a`
   }
   @media screen and (max-width: 530px) {
     margin-right: 5px;
+    width: 150px;
   }
 `;
 

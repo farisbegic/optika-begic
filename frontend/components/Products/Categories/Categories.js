@@ -18,11 +18,10 @@ const Categories = () => {
                         <Link href={`/products/${category.slug}`} key={category.id} passHref>
                             <CategoryCard>
                                 <CategoryImageWrapper>
-                                    <CategoryImage src={category.image} alt=""/>
+                                    <CategoryImage src={category.image} alt="" />
                                 </CategoryImageWrapper>
                                 <CategoryInformation>
-                                    <CategoryTitle>{category.name}</CategoryTitle>
-                                    <CategoryNumber>{category.list.length}</CategoryNumber>
+                                    <CategoryTitle>{category.name}<CategoryNumber>{category.list.length}</CategoryNumber></CategoryTitle>
                                 </CategoryInformation>
                             </CategoryCard>
                         </Link>
