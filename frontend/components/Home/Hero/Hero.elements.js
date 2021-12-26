@@ -9,9 +9,6 @@ export const HeroContainer = styled(FlexContainer)`
   @media screen and (max-width: 1000px){
     margin: 0
   }
-  @media screen and (max-width: 640px){
-    flex-direction: column-reverse;
-  }
 `;
 
 export const HeroInformation = styled(FlexSection)`

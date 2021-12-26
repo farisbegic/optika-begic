@@ -15,7 +15,7 @@ export const ProductsContainer = styled(FlexContainer)`
 `;
 
 export const ProductImage = styled.img`
-  width: 50%;
+  width: 48%;
   @media screen and (max-width: 530px) {
     display: none;
   }
@@ -24,7 +24,7 @@ export const ProductImage = styled.img`
 export const ProductImageMobile = styled.img`
   display: none;
   @media screen and (max-width: 530px) {
-    width: 100%;
+    width: 80%;
     display: block;
   }
 `;
