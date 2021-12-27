@@ -26,7 +26,7 @@ const Index = () => {
             {
                 productList[0] ? (
                     <ProductList products={productList[0]}/>
-                ) : <NotFoundContainer><Image src="/notfound.svg" height="300px" width="300px"/></NotFoundContainer>
+                ) : <NotFoundContainer><Image src="/notfound.svg" height="300px" width="300px" alt="not-found"/></NotFoundContainer>
             }
             <Footer />
         </>

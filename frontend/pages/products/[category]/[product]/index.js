@@ -33,7 +33,7 @@ const Index = () => {
             {
                 product[0] && productList[0] ? (
                     <SingleProduct product={product[0]} categoryName={productList[0].name} categorySlug={productList[0].slug}/>
-                ) : <NotFoundContainer><Image src="/notfound.svg" height="300px" width="300px"/></NotFoundContainer>
+                ) : <NotFoundContainer><Image src="/notfound.svg" height="300px" width="300px" alt="not-found"/></NotFoundContainer>
             }
             <Footer />
         </>

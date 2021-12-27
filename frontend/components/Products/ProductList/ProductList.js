@@ -71,7 +71,7 @@ const ProductList = (props) => {
                                 <ProductInformation>
                                     <ProductBrand>{product.brand}</ProductBrand>
                                     <ProductModel>{product.model}</ProductModel>
-                                    <Link href={`/products/${props.products.slug}/${product.model}`}><ProductButton>POGLEDAJ VIŠE</ProductButton></Link>
+                                    <Link href={`/products/${props.products.slug}/${product.model}`} passHref><ProductButton>POGLEDAJ VIŠE</ProductButton></Link>
                                 </ProductInformation>
                             </ProductCard>
                         );
