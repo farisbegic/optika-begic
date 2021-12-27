@@ -7,6 +7,7 @@ import {products} from "../../../../data/products";
 import Image from 'next/image';
 import {NotFoundContainer} from "../../../../components/globalStyles";
 import MetaData from "../../../../components/seo-meta";
+import ReactGA from "react-ga";
 
 const Index = () => {
     const router = useRouter();
@@ -19,6 +20,11 @@ const Index = () => {
         setProductList(products.filter((category) => category.slug === slug.category));
         products.filter((category) => category.slug === slug.category && setProduct(category.list.filter((product) => product.model === slug.product)));
     }, [slug.category, slug.product])
+
+    useEffect(() => {
+        ReactGA.initialize('G-C9C8483KXW');
+        ReactGA.pageview(`/products/${slug.category}/${slug.product}`);
+    }, [slug.category, slug.product]);
 
     return (
         <>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Navbar from "../components/partials/Navbar/Navbar";
 import Hero from "../components/Home/Hero/Hero";
 import Footer from "../components/partials/Footer/Footer";
@@ -6,7 +6,12 @@ import Process from "../components/Home/Process/Process";
 import Features from "../components/Home/Features/Features";
 import Brands from "../components/Home/Brands/Brands";
 import MetaData from "../components/seo-meta";
+import ReactGA from 'react-ga';
 const Index = () => {
+    useEffect(() => {
+        ReactGA.initialize('G-C9C8483KXW');
+        ReactGA.pageview('/')
+    }, [])
     return (
         <>
             <MetaData
