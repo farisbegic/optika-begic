@@ -9,8 +9,8 @@ import ReactGA from "react-ga";
 
 const Contact = () => {
     useEffect(() => {
-        ReactGA.initialize('G-951SLR9QNB');
-        ReactGA.pageview('/contact')
+        ReactGA.initialize('G-XZF6GSLWZ8');
+        ReactGA.pageview(window.location.pathname);
     }, [])
     return (
         <>

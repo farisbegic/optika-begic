@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Footer from "../../components/partials/Footer/Footer";
 import Navbar from "../../components/partials/Navbar/Navbar";
 import {
@@ -14,8 +14,13 @@ import {
 } from "../../components/Products/Hero/Hero.elements";
 import Categories from "../../components/Products/Categories/Categories";
 import MetaData from "../../components/seo-meta";
+import ReactGA from "react-ga";
 
 const Index = () => {
+    useEffect(() => {
+        ReactGA.initialize('G-XZF6GSLWZ8');
+        ReactGA.pageview(window.location.pathname);
+    }, [])
     return (
         <>
             <MetaData
