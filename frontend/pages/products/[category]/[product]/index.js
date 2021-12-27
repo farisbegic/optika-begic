@@ -21,11 +21,6 @@ const Index = () => {
         products.filter((category) => category.slug === slug.category && setProduct(category.list.filter((product) => product.model === slug.product)));
     }, [slug.category, slug.product])
 
-    useEffect(() => {
-        ReactGA.initialize('G-C9C8483KXW');
-        ReactGA.pageview(`/products/${slug.category}/${slug.product}`);
-    }, [slug.category, slug.product]);
-
     return (
         <>
             <MetaData

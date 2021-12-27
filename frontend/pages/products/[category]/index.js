@@ -14,11 +14,6 @@ const Index = () => {
     const {category} = router.query;
     var productList = products.filter((product) => product.slug === category);
 
-    useEffect(() => {
-        ReactGA.initialize('G-C9C8483KXW');
-        ReactGA.pageview(`/products/${category}`);
-    }, [category]);
-
     return (
         <>
             <MetaData
