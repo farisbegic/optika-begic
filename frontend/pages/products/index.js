@@ -3,8 +3,7 @@ import Footer from "../../components/partials/Footer/Footer";
 import Navbar from "../../components/partials/Navbar/Navbar";
 import {
     HeroContainer,
-    HeroImage,
-    HeroTextContainer, NumberContainer, NumbersSection, NumbersText
+    HeroTextContainer
 } from "../../components/Home/Hero/Hero.elements";
 import {
     ProductsDescription,
@@ -14,13 +13,8 @@ import {
 } from "../../components/Products/Hero/Hero.elements";
 import Categories from "../../components/Products/Categories/Categories";
 import MetaData from "../../components/seo-meta";
-import ReactGA from "react-ga";
 
 const Index = () => {
-    useEffect(() => {
-        ReactGA.initialize('297772471');
-        ReactGA.pageview(window.location.pathname);
-    }, [])
     return (
         <>
             <MetaData
