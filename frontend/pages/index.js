@@ -9,7 +9,7 @@ import MetaData from "../components/seo-meta";
 import ReactGA from 'react-ga';
 const Index = () => {
     useEffect(() => {
-        ReactGA.initialize('G-C9C8483KXW');
+        ReactGA.initialize('G-951SLR9QNB');
         ReactGA.pageview('/')
     }, [])
     return (
