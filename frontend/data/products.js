@@ -28,6 +28,60 @@ export const products = [
                 model: "SO5121-53-BGD GLD",
                 image: "/dioptrijske/SO5121-53-BGD-GLD.jpg"
             },
+            {
+                id: 5,
+                brand: "Sover",
+                model: "SO5200-57-RED",
+                image: "/dioptrijske/SO5200-57-RED.jpg"
+            },
+            {
+                id: 6,
+                brand: "Sover",
+                model: "SO5405-52-HRN",
+                image: "/dioptrijske/SO5405-52-HRN.jpg"
+            },
+            {
+                id: 7,
+                brand: "Sover",
+                model: "SO5405-52-PCA",
+                image: "/dioptrijske/SO5405-52-PCA.jpg"
+            },
+            {
+                id: 8,
+                brand: "Sover",
+                model: "SO5485-55-DM",
+                image: "/dioptrijske/SO5485-55-DM.jpg"
+            },
+            {
+                id: 9,
+                brand: "Sover",
+                model: "SO5560-55-BL",
+                image: "/dioptrijske/SO5560-55-BL.jpg"
+            },
+            {
+                id: 10,
+                brand: "Sover",
+                model: "SO5565-52-PUR",
+                image: "/dioptrijske/SO5565-52-PUR.jpg"
+            },
+            {
+                id: 11,
+                brand: "Sover",
+                model: "SO5580-53-BGD",
+                image: "/dioptrijske/SO5580-53-BGD.jpg"
+            },
+            {
+                id: 12,
+                brand: "Sover",
+                model: "SO5580-53-BLK",
+                image: "/dioptrijske/SO5580-53-BLK.jpg"
+            },
+            {
+                id: 13,
+                brand: "Sover",
+                model: "SO5630-53-PUR",
+                image: "/dioptrijske/SO5630-53-PUR.jpg"
+            },
         ]
     },
     {

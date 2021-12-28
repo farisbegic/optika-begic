@@ -1,7 +1,5 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import {
-    CircleSection,
-    ImageCircle,
     ProductBrand,
     ProductCard,
     ProductModel,
@@ -13,20 +11,30 @@ import {
     ResultsContainer,
     SearchBar,
     SearchContainer,
-    SearchImage,
     SearchResult,
     SearchResultImage,
     SearchResultText,
     SearchSection,
     ProductHeader,
-    MoreButton, ProductButton
+    ProductButton
 } from "./ProductList.elements";
-import {Button} from "../../globalStyles";
 import Link from "next/link";
 import {useState} from "react";
 import {PathLink} from "../SingleProduct/SingleProduct.elements";
+import Pagination from "../../Pagination/Pagination";
 
 const ProductList = (props) => {
+    const [currentPage, setCurrentPage] = useState(1);
+    const pageSize = 12;
+    const data = props.products.list;
+    const currentTableData = useMemo(() => {
+        const firstPageIndex = (currentPage - 1) * pageSize;
+        const lastPageIndex = firstPageIndex + pageSize;
+        return data.slice(firstPageIndex, lastPageIndex);
+    }, [currentPage]);
+
+    console.log(currentTableData);
+
     const [search, setSearch] = useState("");
     return (
         <ProductListContainer>
@@ -64,7 +72,7 @@ const ProductList = (props) => {
             <ProductsContainer>
                 {
 
-                    props.products.list.map((product) => {
+                    currentTableData.map((product) => {
                         return (
                             <ProductCard key={product.id}>
                                 <ProductImage src={product.image}/>
@@ -78,6 +86,12 @@ const ProductList = (props) => {
                     })
                 }
             </ProductsContainer>
+            <Pagination
+                currentPage={currentPage}
+                totalCount={data.length}
+                pageSize={pageSize}
+                onPageChange={page => setCurrentPage(page)}
+            />
         </ProductListContainer>
     );
 };
