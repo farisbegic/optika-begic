@@ -36,9 +36,13 @@ const Pagination = props => {
     return (
         <PaginationBar>
             {/* Left navigation arrow */}
-            <PaginationArrow onClick={onPrevious}>
-                <BsArrowLeftShort />
-            </PaginationArrow>
+            {
+                !(currentPage === 1) && (
+                    <PaginationArrow onClick={onPrevious}>
+                        <BsArrowLeftShort />
+                    </PaginationArrow>
+                )
+            }
             {paginationRange.map(pageNumber => {
 
                 // If the pageItem is a DOT, render the DOTS unicode character
@@ -48,18 +52,21 @@ const Pagination = props => {
 
                 // Render our Page Pills
                 return (
-                    <PaginationElement
-                        className={{selected: pageNumber === currentPage}}
-                        onClick={() => onPageChange(pageNumber)}
-                    >
-                        {pageNumber}
-                    </PaginationElement>
+                    !(pageNumber === currentPage) ? (
+                        <PaginationElement selected onClick={() => onPageChange(pageNumber)}>{pageNumber}</PaginationElement>
+                    ) : (
+                        <PaginationElement onClick={() => onPageChange(pageNumber)}>{pageNumber}</PaginationElement>
+                    )
                 );
             })}
             {/*  Right Navigation arrow */}
-            <PaginationArrow onClick={onNext}>
-                <BsArrowRightShort />
-            </PaginationArrow>
+            {
+                !(currentPage === lastPage) && (
+                    <PaginationArrow onClick={onNext}>
+                        <BsArrowRightShort />
+                    </PaginationArrow>
+                )
+            }
         </PaginationBar>
     );
 };
